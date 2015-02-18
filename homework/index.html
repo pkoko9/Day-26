@@ -34,10 +34,20 @@
 
 <!-- Question # 4 -->
 
-        <div>
+<!--         <div>
             <button type="button" id="button" ng-click="addLike()" ng-controller="LoadingButtonCtrl">{{ numLikes }} Likes</button>
-        </div>
+        </div> -->
 
+<!-- Question # 5 -->
+
+        <div ng-controller="LoadingButtonCtrl">
+            <form ng-submit="submit(user)">
+                <input type="text" ng-model="user.userName" placeholder="User Name" name="UserName">
+                <input type="text" ng-model="user.password" placeholder="Password" name="Password">
+                <input type="email" ng-model="user.email" placeholder="Email" name="firstName">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
 
 
         <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
