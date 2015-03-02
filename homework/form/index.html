@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Homework</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body ng-app="app">
+        
+<!-- Question # 5 -->
+
+        <div ng-controller="LoadingButtonCtrl">
+            <form ng-submit="submit(user)">
+                <input type="text" ng-model="user.userName" placeholder="User Name" name="UserName">
+                <input type="text" ng-model="user.password" placeholder="Password" name="Password">
+                <input type="email" ng-model="user.email" placeholder="Email" name="firstName">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+
+        <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="scripts/app.js"></script>
+        <script type="text/javascript" src="scripts/controller.js"></script>
+    </body>
+</html>
